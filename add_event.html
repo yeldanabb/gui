@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Event – City Sync</title>
+  <link rel="stylesheet" href="add_event.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Main</a></li>
+        <li><a href="festival.html">Festivals</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Art</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Sport</a></li>
+        <li><a href="#">Learning</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h1>Add New Event</h1>
+      <form class="event-form">
+        <label for="name">Event Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="category">Choose a Category</label>
+        <select id="category" name="category" required>
+          <option value="">-- Select Category --</option>
+          <option value="Festivals">Festivals</option>
+          <option value="Music">Music</option>
+          <option value="Art">Art</option>
+          <option value="Students">Students</option>
+          <option value="Food">Food</option>
+          <option value="Sport">Sport</option>
+          <option value="Learning">Learning</option>
+        </select>
+
+        <label for="location">Where is it located?</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="date">When will it be?</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+
+        <label for="links">Links</label>
+        <input type="url" id="links" name="links">
+
+        <button type="submit">Create</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p><strong>BRNO CITY</strong></p>
+      <p>602 00, Brno</p>
+      <p>Tel.: +420 576 876 890</p>
+      <p>Email: info@brno.cz</p>
+    </div>
+    <div class="social">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram (1).png" alt="Instagram"></a>
+      <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+    </div>
+  </footer>
+
+</body>
+</html>

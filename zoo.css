@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Навігація */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #cc0000;
+}
+
+.zoo-banner {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+}
+
+.zoo-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px) brightness(30%);
+}
+
+.banner-overlay {
+  position: absolute;
+  bottom: 0; /* замість top: 0 */
+  left: 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* вирівнює контент донизу */
+  align-items: flex-start;
+  padding: 40px 60px;
+  text-align: left;
+  height: 100%;
+}
+
+
+.banner-overlay h1 {
+  font-size: 44px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 23px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.event-date {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 1px;
+
+}
+
+.zoo-info {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.zoo-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.zoo-box {
+  flex: 1;
+  background-color: #fdf6ee;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  min-width: 280px;
+}
+
+.zoo-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #cc0000;
+}
+
+.zoo-box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.zoo-box a {
+  color: #cc0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.zoo-box a:hover {
+  text-decoration: underline;
+}
+
+.info-button {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.info-button:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+/* Галерея */
+.zoo-gallery {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.zoo-gallery h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #eee;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.social a img {
+  margin-top: 2px;
+  width: 24px;
+  margin-right: 10px;
+}
